@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Samwise Gamgee",
+    "email": "realmaincharacter@hotmail.com",
+    "password": "password1"
+  },
+  {
+    "name": "Jerry Seinfeld",
+    "email": "elainekickedapidgeon@gmail.com",
+    "password": "password12"
+  },
+  {
+    "name": "Morgan Freeman",
+    "email": "youreadthisinmyvoice@aol.com",
+    "password": "password123"
+  }
+]

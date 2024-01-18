@@ -1,0 +1,38 @@
+[
+  {
+    "comment_body": "Thats a made up word!",
+    "date_created": "January 15, 2024",
+    "user_id": 2,
+    "blogPost_id": 1
+  },
+  {
+    "comment_body": "All words are made up!",
+    "date_created": "January 16, 2024",
+    "user_id": 1,
+    "blogPost_id": 1
+  },
+  {
+    "comment_body": "Thanks for the useless info...",
+    "date_created": "January 18, 2024",
+    "user_id": 3,
+    "blogPost_id": 2
+  },
+  {
+    "comment_body": "More useful, the square root of the diameter of the sun in Kilometers is 1180.13K",
+    "date_created": "January 19, 2024",
+    "user_id": 1,
+    "blogPost_id": 2
+  },
+  {
+    "comment_body": "But... African or European swallow?",
+    "date_created": "January 29, 2024",
+    "user_id": 2,
+    "blogPost_id": 3
+  },
+  {
+    "comment_body": "I dont Know tha-WAAaAAAAaAAgh!",
+    "date_created": "January 29, 2024",
+    "user_id": 3,
+    "blogPost_id": 3
+  }
+]
