@@ -24,6 +24,12 @@ body {
     margin-left: 1rem;
 }
 
+.card {
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 1rem;
+}
+
 .login-card, .signup-card {
     width: 20%; 
     margin: auto; 
