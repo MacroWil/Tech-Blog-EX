@@ -1,8 +1,14 @@
+// const sequelize = require("../config/connection");
+// const { User, BlogPost, Comment } = require("../models");
+// const userData = require("./userData.json");
+// const blogPostData = require("./blogPostData.json");
+// const commentData = require("./commentData.json");
+
 const sequelize = require("../config/connection");
 const { User, BlogPost, Comment } = require("../models");
-const userData = require("./userData.json");
-const blogPostData = require("./blogPostData.json");
-const commentData = require("./commentData.json");
+const userData = require("./users.json");
+const blogPostData = require("./blogPosts.json");
+const commentData = require("./comments.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
