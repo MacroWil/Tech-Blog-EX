@@ -10,6 +10,7 @@ router.post("/", withAuth, async (req, res) => {
       ...req.body,
       user_id: req.session.user_id,
     });
+    console.log("New Blog Post Added:", newBlogPost);
     res.status(200).json(newBlogPost);
   } catch (err) {
     console.log(err);
