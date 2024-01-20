@@ -5,7 +5,7 @@ body {
     cursor: url('/images/Black_Circle.png'), auto;
 }
 
-a:hover, .btn:hover, .button:hover {
+a:hover, .btn:hover, .button:hover, .form-input:hover, .form-group:hover {
     cursor: url('/images/Black_CircleHover.png'), auto !important;
 }
 
