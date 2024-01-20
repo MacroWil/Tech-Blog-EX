@@ -2,6 +2,11 @@ body {
     background-color: #faf0e6;
     height: 300vh; 
     margin: 0; 
+    cursor: url('/images/Black_Circle.png'), auto;
+}
+
+a:hover, .btn:hover, .button:hover {
+    cursor: url('/images/Black_CircleHover.png'), auto !important;
 }
 
 .navbar {
