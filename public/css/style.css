@@ -1,0 +1,48 @@
+body {
+    background-color: #FFFFF7;
+    height: 100vh; 
+    margin: 0; 
+}
+
+.navbar {
+    height:10vh;
+}
+
+.navbar-brand {
+    font-family: 'Cinzel';
+    color: #70869d;
+    letter-spacing: .15em;
+    font-size: 2rem !important;
+    text-shadow: 
+    -1px -1px 1px #efede3, 
+    0px 1px 0 #2e2e2e, 
+}
+
+.nav-item {
+    font-family: Ogg-Medium;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.login-card, .signup-card {
+    width: 20%; 
+    margin: auto; 
+    margin-top: 15%;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.form-group {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    margin-top:10px;
+}
+
+.signup-button {
+    text-decoration: none;
+    color:black;
+}

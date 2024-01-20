@@ -1,0 +1,12 @@
+{{!-- These are the cards generated to show the user their own posts in their dashboard  --}}
+      {{#if userBlogPosts.length}}
+        {{#each userBlogPosts}}
+          <div class="user-blog-post">
+            <h2>{{title}}</h2>
+            <p>Posted on {{dateCreated}}</p>
+          </div>
+        {{/each}}
+      {{else}}
+        <p>You haven't created any blog posts yet. <a href="/newpost">Create a new one!</a></p>
+      {{/if}}
+    {{/if}}
