@@ -58,3 +58,4 @@ Contributors : [Maguire Wilson](https://github.com/MacroWil), [Bryn Glofelty](ht
 Link to deployed web application [HERE] (https://brzama-tech-blog-8396d9089178.herokuapp.com/)
 
 ## Images
+![model](./public/images/website.png)
