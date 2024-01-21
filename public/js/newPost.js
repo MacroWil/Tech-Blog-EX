@@ -6,7 +6,7 @@ async function newFormHandler(event) {
     const description = document.querySelector('#textInput').value;
     console.log(title, description)
 
-    const response = await fetch(`/api/blogposts`, {
+    const response = await fetch(`api/blogposts`, {
         method: 'POST',
         body: JSON.stringify({
         title,
@@ -25,4 +25,4 @@ async function newFormHandler(event) {
 
 }
 
-document.querySelector('#userInputForm').addEventListener('submit', newFormHandler);
+// document.querySelector('#userInputForm').addEventListener('submit', newFormHandler);

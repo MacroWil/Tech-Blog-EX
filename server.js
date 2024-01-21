@@ -14,7 +14,7 @@ const hbs = exphbs.create({ helpers });
 const sess = {
   secret: "beans are secretly here",
   cookie: {
-    maxAge: 1000,
+    maxAge: 1000000,
     httpOnly: true,
     secure: false,
     sameSite: "strict",
