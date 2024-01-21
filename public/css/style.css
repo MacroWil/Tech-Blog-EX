@@ -100,3 +100,7 @@ a:hover, .btn:hover, .button:hover, .form-input:hover, .form-group:hover {
     color:black;
     text-decoration: none;
 }
+
+#createPostBtn a:hover {
+    color: white;
+}
