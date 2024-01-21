@@ -19,7 +19,7 @@ router.post("/", withAuth, async (req, res) => {
 });
 
 //localhost3001/api/blogposts/:id (get request)
-router.get("/:id", withAuth, async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     const blogPostData = await BlogPost.findByPk(req.params.id, {
       include: [
