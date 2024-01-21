@@ -1,33 +1,33 @@
 //create new blog post
 async function newFormHandler(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const title = document.querySelector('#titleInput').value;
-    const description = document.querySelector('#textInput').value;
+  const title = document.querySelector("#titleInput").value;
+  const description = document.querySelector("#textInput").value;
 
+  console.log(title, description);
 
-    console.log(title, description)
-    
-    if(title && description) {
-
-    const response = await fetch(`api/blogposts`, {
-        method: 'POST',
-        body: JSON.stringify({
+  if (title && description) {
+    const response = await fetch(`/api/blogposts`, {
+      method: "POST",
+      body: JSON.stringify({
         title,
         description,
-        }),
-        headers: {
-        'Content-Type': 'application/json',
-        },
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
-    console.log(response)
+    console.log(response);
     if (response.ok) {
-        document.location.replace('/');
+      document.location.replace("/api/dashboard");
     } else {
-        alert('Failed to add blog post');
+      alert("Failed to add blog post");
     }
-}
+  }
 }
 
-document.querySelector('#userInputForm').addEventListener('submit', newFormHandler);
+document
+  .querySelector("#userInputForm")
+  .addEventListener("submit", newFormHandler);
