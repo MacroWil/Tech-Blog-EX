@@ -1,6 +1,12 @@
-{{!-- These are the cards generated to show the user their own posts in their dashboard  --}}
+{{! These are the cards generated to show the user their own posts in their dashboard  }}
 
-          <div class="user-blog-post">
-            <h2>Title</h2>
-            <p>Posted on </p>
-          </div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{description}}</p>
+    <p class="card-text text-muted text-end byTag">
+      {{user.name}}
+      on
+      {{format_date date_created}}</p>
+  </div>
+</div>
