@@ -1,6 +1,8 @@
 {{!-- These are the cards where a user sees their previous posts in their dashbaord  --}}
 <div class="content">
-    <button type="button" id="createPostBtn" class="btn btn-outline-dark"><a href="/api/dashboard/create">Create a new post!</a></button>
+    <div class="text-center">
+    <button type="button" id="createPostBtn" class="btn btn-outline-secondary"><a href="/api/dashboard/create">Create a new post!</a></button>
+    </div>
     {{#if blogPosts.length}}
     {{#each blogPosts as |blogPost|}}
     {{> dashboardCard blogPost}}
