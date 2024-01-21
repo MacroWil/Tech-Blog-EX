@@ -1,10 +1,13 @@
 {{!-- This is where users can see other peoples posts on the homepage --}}
-{{!-- {{#each posts as |post|}} --}}
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">Julius Sans One</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <p class="card-text text-muted text-end byTag"> - username on date</p>
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{description}}</p>
+    <p class="card-text text-muted text-end byTag">
+      {{user.name}}
+      on
+      {{format_date date_created}}</p>
+      <button type="button" class="btn btn-light">See Post with Comments</button>
   </div>
 </div>
-{{!-- {{/each}} --}}
+{{!-- Triggers drop down of comments with input field and submit to button leave a comment --}}
