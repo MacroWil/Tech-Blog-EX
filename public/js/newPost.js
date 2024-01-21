@@ -4,7 +4,11 @@ async function newFormHandler(event) {
 
     const title = document.querySelector('#titleInput').value;
     const description = document.querySelector('#textInput').value;
+
+
     console.log(title, description)
+    
+    if(title && description) {
 
     const response = await fetch(`api/blogposts`, {
         method: 'POST',
@@ -16,13 +20,14 @@ async function newFormHandler(event) {
         'Content-Type': 'application/json',
         },
     });
-    console.log(response)
-    // if (response.ok) {
-    //     document.location.replace('/');
-    // } else {
-    //     alert('Failed to add blog post');
-    // }
 
+    console.log(response)
+    if (response.ok) {
+        document.location.replace('/');
+    } else {
+        alert('Failed to add blog post');
+    }
+}
 }
 
-// document.querySelector('#userInputForm').addEventListener('submit', newFormHandler);
+document.querySelector('#userInputForm').addEventListener('submit', newFormHandler);
