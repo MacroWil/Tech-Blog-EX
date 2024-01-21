@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const withAuth = require("../../utils/auth");
-const { BlogPost } = require("../../models");
+const { BlogPost, Comment, User } = require("../../models");
 
 //localhost3001/api/blogposts (post request)
 router.post("/", withAuth, async (req, res) => {
@@ -41,7 +41,6 @@ router.get("/:id", withAuth, async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
-    res.redirect("/login");
   }
 });
 

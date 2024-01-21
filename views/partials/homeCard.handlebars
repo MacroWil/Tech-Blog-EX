@@ -7,7 +7,7 @@
       {{user.name}}
       on
       {{format_date date_created}}</p>
-      <button type="button" class="btn btn-light">See Post with Comments</button>
+      <button type="button" class="btn btn-light"><a class="commentLink" href="/api/blogposts/{{id}}">See Post with Comments</a></button>
   </div>
 </div>
 {{!-- Triggers drop down of comments with input field and submit to button leave a comment --}}

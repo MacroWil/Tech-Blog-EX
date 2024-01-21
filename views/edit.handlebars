@@ -1,1 +1,11 @@
-{{!-- When a user goes to edit their previous posts they will go to this page --}}
+<form method="POST">
+<div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input type="text" class="form-control" id="title" name="title" value="{{title}}" required>
+</div>
+<div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea class="form-control" id="description" name="description" rows="3" required>{{description}}</textarea>
+</div>
+<button type="submit" class="btn btn-primary" id="updatePost">Update Post</button>
+</form>
