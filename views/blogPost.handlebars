@@ -19,5 +19,8 @@
     </div>
 </div>
 </div>
-{{> commentInput }}
+<form id="commentForm">
+  <div class="form-group">
+    <textarea hidden id="postId" value="{{id}}"></textarea>
+{{> commentInput}}
 <script src="/js/newComment.js"></script>

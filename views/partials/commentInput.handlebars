@@ -1,12 +1,11 @@
-<form class="commentInput" method="POST">
-  <div class="mb-3">
-    <label for="description" class="form-label">Add a Comment!</label>
+<form id="commentForm">
+  <div class="form-group">
+    <label for="textInput">Add a Comment!</label>
     <textarea
       class="form-control"
-      id="description"
-      name="description"
+      id="textInput"
       rows="3"
-      required
+      placeholder="Type your text here"
     ></textarea>
   </div>
   <button type="submit" class="btn btn-primary" id="submitComment">Submit
