@@ -86,7 +86,17 @@ a:hover, .btn:hover, .button:hover, .form-input:hover, .form-group:hover {
     color:black;
 }
 
-.btn btn-warning a {
+#editBtn a {
     color: white;
+    text-decoration: none;
+}
+
+#createPostBtn {
+    position:relative;
+    margin: auto;
+}
+
+#createPostBtn a {
+    color:black;
     text-decoration: none;
 }
