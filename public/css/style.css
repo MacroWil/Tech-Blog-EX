@@ -91,16 +91,12 @@ a:hover, .btn:hover, .button:hover, .form-input:hover, .form-group:hover {
     text-decoration: none;
 }
 
-#createPostBtn {
-    position:relative;
-    margin: auto;
-}
-
 #createPostBtn a {
     color:black;
     text-decoration: none;
 }
 
-#createPostBtn a:hover {
-    color: white;
+.commentLink {
+    color:black;
+    text-decoration: none;
 }
