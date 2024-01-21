@@ -1,3 +1,4 @@
+<div class="blogPostCard">
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">{{title}}</h5>
@@ -7,4 +8,19 @@
       on
       {{format_date date_created}}</p>
   </div>
+  <div class="commentContainer">
+    <h3 class="commentTitle">Comments</h3>
+    {{#each comments as |comment|}}
+      <div>
+        <p><strong>@{{comment.user.name}}</strong> on {{format_date comment.date_created}}</p>
+        <p class="commentContent">{{comment.comment_body}}</p>
+      </div>
+    {{/each}}
+    </div>
 </div>
+</div>
+<form id="commentForm">
+  <div class="form-group">
+    <textarea hidden id="postId" value="{{id}}"></textarea>
+{{> commentInput}}
+<script src="/js/newComment.js"></script>
