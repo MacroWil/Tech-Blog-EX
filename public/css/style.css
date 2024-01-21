@@ -64,17 +64,21 @@ a:hover, .btn:hover, .button:hover, .form-input:hover, .form-group:hover {
   }
 
 .login-card, .signup-card {
-    width: 12%; 
+    width: 20%; 
     margin: auto; 
-    margin-top: 15%;
     padding: 20px; 
     box-shadow: 1px 1px 20px 3px black;
     background: transparent;
+    margin-top: 5%;
 }
 
 .form-group {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.form-input {
+    width:80%;
 }
 
 .btn {
@@ -99,4 +103,75 @@ a:hover, .btn:hover, .button:hover, .form-input:hover, .form-group:hover {
 .commentLink {
     color:black;
     text-decoration: none;
+}
+
+.commentContainer {
+    padding:16px;
+}
+
+.commentInput {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.navbar-toggler {
+    z-index: 3;
+}
+
+@media screen and (max-width: 994px) {
+    .card {
+        margin-right: 5%;
+    }
+
+    .commentInput {
+        margin-left: 15%;
+    }
+
+    .editCard {
+        margin: auto;
+        margin-top: 17% !important;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .login-card, .signup-card {
+        width: 50%; 
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 773px) {
+    .content {
+        margin-left: 15%;
+    }
+
+    .editCard {
+        margin: auto;
+        margin-top: 15% !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .content {
+        margin-left: 25%;
+    }
+
+    .editCard {
+        margin: auto;
+        margin-top: 20% !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .content {
+        width:90%;
+        margin-top: 37%;
+        margin-left: 5%;
+    }
+
+    .blogPostCard, .editCard {
+        margin: auto;
+        margin-top: 37% !important;
+    }
 }
